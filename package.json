@@ -1,6 +1,6 @@
 {
 	"name": "idares-ui",
-	"version": "0.1.0",
+	"version": "0.0.0",
 	"private": false,
 	"dependencies": {
 		"react": "^18.2.0",
@@ -12,11 +12,14 @@
 	},
 	"scripts": {
 		"start": "react-scripts start",
-		"build": "react-scripts build",
+		"clean": "rm -rf ./dist",
+		"build": "npm run clean && tsc",
+		"npm-pub": "npm run build && npm version patch && npm publish",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"storybook": "start-storybook -p 6006 -s public",
-		"build-storybook": "build-storybook -s public"
+		"build-storybook": "build-storybook -s public",
+		"chromatic": "npx chromatic --project-token=d9f83c1db765"
 	},
 	"eslintConfig": {
 		"extends": [
@@ -47,16 +50,7 @@
 		]
 	},
 	"devDependencies": {
-		"tsconfig-paths-webpack-plugin": "^4.0.0",
-		"tsdx": "^0.14.1",
 		"@storybook/addon-a11y": "^6.5.10",
-		"@testing-library/jest-dom": "^5.16.4",
-		"@testing-library/react": "^13.3.0",
-		"@testing-library/user-event": "^13.5.0",
-		"@types/jest": "^28.1.4",
-		"@types/node": "^18.0.3",
-		"@types/react": "^18.0.15",
-		"@types/react-dom": "^18.0.6",
 		"@storybook/addon-actions": "^6.5.10",
 		"@storybook/addon-essentials": "^6.5.10",
 		"@storybook/addon-interactions": "^6.5.10",
@@ -67,10 +61,22 @@
 		"@storybook/preset-create-react-app": "^4.1.2",
 		"@storybook/react": "^6.5.10",
 		"@storybook/testing-library": "^0.0.13",
+		"@testing-library/jest-dom": "^5.16.4",
+		"@testing-library/react": "^13.3.0",
+		"@testing-library/user-event": "^13.5.0",
+		"@types/jest": "^28.1.4",
+		"@types/node": "^18.0.3",
+		"@types/react": "^18.0.15",
+		"@types/react-dom": "^18.0.6",
 		"@types/styled-components": "^5.1.25",
 		"babel-plugin-named-exports-order": "^0.0.2",
+		"chromatic": "^6.7.3",
 		"prop-types": "^15.8.1",
 		"ts-loader": "^9.3.1",
+		"tsconfig-paths-webpack-plugin": "^4.0.0",
+		"tsdx": "^0.14.1",
 		"webpack": "^5.73.0"
-	}
+	},
+	"readme": "ERROR: No README data found!",
+	"_id": "idares-ui@0.1.0"
 }

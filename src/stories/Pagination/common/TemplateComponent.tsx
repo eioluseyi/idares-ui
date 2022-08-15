@@ -1,5 +1,6 @@
 import * as React from "react";
 import Pagination from "../../../ui-components/pagination";
+import "../../index.css";
 
 export const TemplateComponent = (
 	args: JSX.IntrinsicAttributes & {
@@ -8,7 +9,7 @@ export const TemplateComponent = (
 		count?: number;
 	}
 ) => {
-	const [page, setPage] = React.useState<number>(args.page);
+	const [page, setPage] = React.useState<number>(args.page ?? 0);
 
 	React.useEffect(() => setPage(args.page ?? 1), [args.page]);
 
