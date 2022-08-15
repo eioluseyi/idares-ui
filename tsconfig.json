@@ -2,16 +2,21 @@
 	"compilerOptions": {
 		"baseUrl": "src",
 		"outDir": "./dist/",
+		// "noEmit": false,
 		"noImplicitAny": true,
 		"module": "es6",
 		"target": "es5",
 		"jsx": "react",
 		"allowJs": true,
-		"moduleResolution": "node"
+		"moduleResolution": "node",
+		"sourceMap": true
 		// "paths": {
 		// 	"@pagination/*": ["ui-components/pagination/*"],
 		// 	"@xyz/*": ["ui-components/xyz/*"]
 		// }
+		// "skipLibCheck": true
 	},
-	"include": ["src", "custom.d.ts"]
+	"include": ["src", "custom.d.ts"],
+	"exclude": ["node_modules", "src/stories"]
+	// "files": ["dist", "src"]
 }
