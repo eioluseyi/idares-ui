@@ -1,6 +1,6 @@
 {
 	"name": "idares-ui",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"private": false,
 	"main": "src/index.js",
 	"types": "src/index.d.ts",
