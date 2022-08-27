@@ -1,11 +1,11 @@
 import * as React from "react";
 import {
-	FirstPage,
-	FirstThree,
-	LastPage,
-	LastThree,
-	MiddlePage,
-	SpacerInput
+  FirstPage,
+  FirstThree,
+  LastPage,
+  LastThree,
+  MiddlePage,
+  SpacerInput,
 } from "./fragments";
 
 /**
@@ -14,13 +14,13 @@ import {
  * FirstThree | SpacerInput | LastPage
  * */
 export const AtFirstThreeComponent: React.FC = () => {
-	return (
-		<React.Fragment>
-			<FirstThree />
-			<SpacerInput />
-			<LastPage />
-		</React.Fragment>
-	);
+  return (
+    <React.Fragment>
+      <FirstThree />
+      <SpacerInput />
+      <LastPage />
+    </React.Fragment>
+  );
 };
 
 /**
@@ -29,15 +29,15 @@ export const AtFirstThreeComponent: React.FC = () => {
  * FirstPage | SpacerInput | MiddlePage | SpacerInput | LastPage
  * */
 export const AtWithinComponent: React.FC = () => {
-	return (
-		<React.Fragment>
-			<FirstPage />
-			<SpacerInput />
-			<MiddlePage />
-			<SpacerInput />
-			<LastPage />
-		</React.Fragment>
-	);
+  return (
+    <React.Fragment>
+      <FirstPage />
+      <SpacerInput />
+      <MiddlePage />
+      <SpacerInput />
+      <LastPage />
+    </React.Fragment>
+  );
 };
 
 /**
@@ -46,11 +46,11 @@ export const AtWithinComponent: React.FC = () => {
  * FirstPage | SpacerInput | LastThree
  * */
 export const AtLastThreeComponent: React.FC = () => {
-	return (
-		<React.Fragment>
-			<FirstPage />
-			<SpacerInput />
-			<LastThree />
-		</React.Fragment>
-	);
+  return (
+    <React.Fragment>
+      <FirstPage />
+      <SpacerInput />
+      <LastThree />
+    </React.Fragment>
+  );
 };

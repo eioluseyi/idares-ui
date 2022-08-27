@@ -1,14 +1,19 @@
 {
-	"plugins": ["jsx-a11y"],
-	"extends": ["plugin:jsx-a11y/recommended"],
-	"rules": {
-		"jsx-a11y/no-autofocus": "warn"
-	},
+	"root": true,
+	"extends": ["prettier"],
+	"parser": "@typescript-eslint/parser",
+	"plugins": ["@typescript-eslint", "prettier", "react", "react-hooks"],
+	"rules": {},
 	"settings": {
-		"jsx-a11y": {
-			"components": {
-				"PaginationButton": "button"
-			}
+		"react": {
+			"version": "detect"
 		}
+	},
+	"env": {
+		"browser": true,
+		"node": true
+	},
+	"globals": {
+		"JSX": true
 	}
 }
