@@ -1,5 +1,6 @@
 // import reportWebVitals from "./reportWebVitals";
-export * from "./ui-components/pagination/index";
+import Pagination from "./ui-components/pagination/index";
+export { Pagination };
 // export * from "ui-components/pagination/index";
 // ui-components/pagination";
 
