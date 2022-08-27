@@ -4,9 +4,9 @@ import { MainContext } from "../../utils/context";
 import { MainContextType } from "../../utils/types";
 import { NextButton, PreviousButton } from "./fragments";
 import {
-	AtFirstThreeComponent,
-	AtLastThreeComponent,
-	AtWithinComponent
+  AtFirstThreeComponent,
+  AtLastThreeComponent,
+  AtWithinComponent,
 } from "./states";
 
 /**
@@ -22,23 +22,24 @@ import {
  */
 
 export const FullMode: React.FC = () => {
-	const { numberOfPages, page } = useContext<MainContextType>(MainContext);
+  const { numberOfPages, page } = useContext<MainContextType>(MainContext);
 
-	const AtFirstThree: boolean = page <= 3;
-	const AtWithin: boolean = page >= 4 && page < numberOfPages - 2;
-	const AtLastThree: boolean = page >= numberOfPages - 2;
+  const AtFirstThree: boolean = page <= 3;
+  const AtWithin: boolean = page >= 4 && page < numberOfPages - 2;
+  const AtLastThree: boolean = page >= numberOfPages - 2;
 
-	const renderState = () => {
-		if (AtFirstThree) return <AtFirstThreeComponent />;
-		if (AtWithin) return <AtWithinComponent />;
-		if (AtLastThree) return <AtLastThreeComponent />;
-	};
+  const renderState = () => {
+    if (AtFirstThree) return <AtFirstThreeComponent />;
+    if (AtWithin) return <AtWithinComponent />;
+    if (AtLastThree) return <AtLastThreeComponent />;
+    return <></>;
+  };
 
-	return (
-		<React.Fragment>
-			<PreviousButton />
-			{renderState()}
-			<NextButton />
-		</React.Fragment>
-	);
+  return (
+    <React.Fragment>
+      <PreviousButton />
+      {renderState()}
+      <NextButton />
+    </React.Fragment>
+  );
 };

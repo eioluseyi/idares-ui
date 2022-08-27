@@ -1,21 +1,23 @@
 {
+	"include": ["src"],
+	"exclude": ["dist", "node_modules", "src/stories"],
 	"compilerOptions": {
-		"baseUrl": "src",
-		"outDir": "./dist/",
-		// "noEmit": false,
-		"noImplicitAny": true,
-		"module": "es6",
-		"target": "es5",
-		"jsx": "react",
-		"allowJs": true,
-		"moduleResolution": "node",
+		"module": "esnext",
+		"lib": ["dom", "esnext"],
+		"importHelpers": true,
+		"declaration": true,
 		"sourceMap": true,
-		// "paths": {
-		// 	"@pagination/*": ["ui-components/pagination/*"],
-		// 	"@xyz/*": ["ui-components/xyz/*"]
-		// }
-		"skipLibCheck": true
-	},
-	"include": ["src", "custom.d.ts"],
-	"exclude": ["node_modules", "src/stories"]
+		"rootDir": "./src",
+		"outDir": "./dist/esm",
+		"strict": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"moduleResolution": "node",
+		"jsx": "react",
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true
+	}
 }
