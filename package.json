@@ -1,5 +1,5 @@
 {
-	"name": "@idares-ui-test/react",
+	"name": "idares-ui-test",
 	"version": "0.0.7",
 	"private": false,
 	"main": "./dist/cjs/index.js",
