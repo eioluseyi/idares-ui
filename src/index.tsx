@@ -1,6 +1,6 @@
 // import reportWebVitals from "./reportWebVitals";
-import React from "react";
-import ReactDOM from "react-dom";
+// import React from "react";
+// import ReactDOM from "react-dom";
 import Pagination from "./ui-components/pagination";
 export { Pagination };
 // export * from "ui-components/pagination/index";
@@ -8,4 +8,4 @@ export { Pagination };
 
 // reportWebVitals(console.log);
 
-ReactDOM.render(<Pagination />, document.querySelector("#root"));
+// ReactDOM.render(<Pagination />, document.querySelector("#root"));
