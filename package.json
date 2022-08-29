@@ -1,5 +1,5 @@
 {
-	"name": "idares-ui-test",
+	"name": "@idares-ui-test/react",
 	"version": "0.0.6",
 	"private": false,
 	"main": "./dist/cjs/index.js",
@@ -20,7 +20,7 @@
 		"chromatic": "npx chromatic --project-token=d9f83c1db765",
 		"prepare": "npm run build",
 		"prepublishOnly": "npm test && npm run prettier && npm run lint && npm run prepare",
-		"npm-pub": "npm version patch && npm publish @idares-ui-test/react"
+		"npm-pub": "npm version patch && npm publish"
 	},
 	"eslintConfig": {
 		"extends": [
