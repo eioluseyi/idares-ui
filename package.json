@@ -1,6 +1,6 @@
 {
-	"name": "idares-ui-test",
-	"version": "0.0.9",
+	"name": "@idares-ui/react",
+	"version": "0.0.0",
 	"private": false,
 	"main": "./dist/cjs/index.js",
 	"module": "./dist/esm/index.js",
@@ -17,6 +17,7 @@
 		"eject": "react-scripts eject",
 		"storybook": "start-storybook -p 6006 -s public",
 		"build-storybook": "build-storybook -s public",
+		"b-sb-docs": "build-storybook --docs",
 		"chromatic": "npx chromatic --project-token=d9f83c1db765",
 		"prepare": "npm run build",
 		"prepublishOnly": "npm test && npm run prettier && npm run lint && npm run prepare",
@@ -58,28 +59,53 @@
 		"README.md"
 	],
 	"keywords": [
+		"ui",
+		"seo",
+		"pages",
 		"react",
-		"pagination"
+		"components",
+		"styled-components",
+		"react-components",
+		"pagination",
+		"accessibile"
 	],
 	"license": "MIT",
 	"author": "Emmanuel Imolorhe (eioluseyi)",
-	"dependencies": {},
+	"dependencies": {
+		"react": ">= 16.8.0",
+		"react-dom": ">= 16.8.0",
+		"styled-components": ">= 5.3.5"
+	},
 	"peerDependencies": {
 		"react": ">= 16.8.0",
 		"react-dom": ">= 16.8.0",
 		"styled-components": ">= 5.3.5"
 	},
 	"devDependencies": {
-		"eslint": "^8.23.0",
-		"eslint-config-prettier": "^8.5.0",
-		"prettier": "^2.7.1",
+		"@storybook/addon-a11y": "^6.5.10",
+		"@storybook/addon-backgrounds": "^6.5.10",
+		"@storybook/addon-controls": "^6.5.10",
+		"@storybook/addon-docs": "^6.5.10",
+		"@storybook/addon-essentials": "^6.5.10",
+		"@storybook/addon-interactions": "^6.5.10",
+		"@storybook/addon-links": "^6.5.10",
+		"@storybook/addon-measure": "^6.5.10",
+		"@storybook/addon-storysource": "^6.5.10",
+		"@storybook/addon-viewport": "^6.5.10",
+		"@storybook/addons": "^6.5.10",
+		"@storybook/builder-webpack5": "^6.5.10",
+		"@storybook/manager-webpack5": "^6.5.10",
 		"@storybook/react": "^6.5.10",
 		"@types/react": "^18.0.17",
 		"@types/react-dom": "^18.0.6",
 		"@types/styled-components": "^5.1.26",
+		"chromatic": "^6.8.0",
+		"eslint": "^8.23.0",
+		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-prettier": "^4.2.1",
-		"typescript": "^4.7.4",
-		"react-scripts": "^5.0.1"
+		"prettier": "^2.7.1",
+		"react-scripts": "^5.0.1",
+		"typescript": "^4.7.4"
 	},
 	"repository": {
 		"type": "git",
@@ -87,5 +113,6 @@
 	},
 	"bugs": {
 		"url": "https://github.com/eioluseyi/idares-ui/issues"
-	}
+	},
+	"homepage": "https://idares-ui.netlify.app/"
 }
