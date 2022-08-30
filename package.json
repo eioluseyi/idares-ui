@@ -21,7 +21,7 @@
 		"chromatic": "npx chromatic --project-token=d9f83c1db765",
 		"prepare": "npm run build",
 		"prepublishOnly": "npm test && npm run prettier && npm run lint && npm run prepare",
-		"npm-pub": "npm version patch && npm publish"
+		"npm-pub": "npm version patch && npm publish --access public"
 	},
 	"eslintConfig": {
 		"extends": [
