@@ -90,4 +90,4 @@ bsType = "xs" | "sm" | "md" | "lg" | "xl" | <css-size-units>
 
 ##### Storybook docs
 
-View the full Storybook documentation [ here ](#https://idares-ui.netlify.app)
+View the full Storybook documentation [ here ](https://idares-ui.netlify.app)
